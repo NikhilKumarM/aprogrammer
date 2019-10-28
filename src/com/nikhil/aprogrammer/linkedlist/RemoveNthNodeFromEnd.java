@@ -1,8 +1,17 @@
 package com.nikhil.aprogrammer.linkedlist;
 
+import java.util.LinkedList;
+
+/**
+ * Implementing the program to remove the Nth Node from the end of Linked List.
+ *
+ * @author Nikhil Kumar Mengani
+ */
 public class RemoveNthNodeFromEnd {
 
-    //Definition for singly-linked list.
+    /**
+     * Definition for singly-linked list.
+     */
     public class ListNode {
         int val;
         ListNode next;
@@ -12,6 +21,15 @@ public class RemoveNthNodeFromEnd {
         }
     }
 
+    /**
+     * METHOD - 1 : In single pass.
+     * <p>
+     * This method removes the Nth node from the end of given Linked List.
+     *
+     * @param head Head of the Linked List
+     * @param n    Position from the end of the Linked List.
+     * @return Head of the Linked List after removing the N th node from the given list.
+     */
     public ListNode removeNthFromEnd_1(ListNode head, int n) {
 
         /* Returning Null if head Node is Null */
@@ -54,6 +72,15 @@ public class RemoveNthNodeFromEnd {
         return length;
     }
 
+    /**
+     * METHOD - 2 : In single pass.
+     * <p>
+     * This method removes the Nth node from the end of given Linked List.
+     *
+     * @param head Head of the Linked List
+     * @param n    Position from the end of the Linked List.
+     * @return Head of the Linked List after removing the N th node from the given list.
+     */
     public ListNode removeNthFromEnd_2(ListNode head, int n) {
 
         if (head == null) {
